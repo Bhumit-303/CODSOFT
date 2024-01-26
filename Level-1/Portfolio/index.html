@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img id="logo" src="images/logo.jpg" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Devloper</p>
+                <h1>Hi 👋, I'm <br><span>Bhumit Jain</span><br> From Udaipur, Rajasthan</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------about---------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_20231221_140417.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 id="sub">About Me</h1>
+                    <p>Hey there! I'm Bhumit Jain, a passionate full-stack web developer with a knack for turning ideas into digital reality. I believe that the web is a canvas where creativity meets functionality, and I love weaving both seamlessly into my work. As a full-stack enthusiast, I thrive on the balance between front-end finesse and back-end robustness. 
+                        <br>
+                        My journey involves crafting responsive and user-friendly interfaces that not only look good but also perform seamlessly under the hood. My coding journey started with a curiosity about how things work on the web, and it quickly turned into a full-blown passion. From designing intuitive user interfaces to optimizing database queries, I enjoy every aspect of the development process.In my world, every line of code is a brushstroke, painting a picture of innovation and efficiency. I believe in creating solutions that not only meet the functional requirements but also bring a smile to the end-users. When I'm not immersed in the world of coding, you'll find me exploring new technologies, enjoying a good cup of coffee, playing guitar or tinkering with new project ideas. I'm always up for a coding adventure, whether it's a new project, collaboration, or just a friendly chat about the latest tech trends.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- -----skills------------------------ -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end</span><br> HTML, CSS, Java Script</li>
+                                <li><span>Backend</span><br> Node.js, MySQL, HTTP, Express middlewares</li>
+                                <li><span>DSA</span> <br> String, Array, Recursion</li>
+                            </ul>
+                        </div>
+                        <!----------experience------------------------ -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br> Full Stack Web Devlopment at Masai School</li>
+                            </ul>
+                        </div>
+                        <!----------education------------------------ -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>B.com from Mohan Lal Sukhadiya University</li>
+                                <li><span>2024</span><br>Web Devlopment From Masai School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------tech-stack---------------->
+<div id="techstack">
+    <div class="container">
+        <h1 id="sub">Tech Stack</h1>
+        <div class="stack-icons">
+            <span><img src="images/icons/icons8-html5-144.png"><br>html</span>
+            <span><img src="images/icons/icons8-css3-144.png"><br>CSS</span>
+            <span><img src="images/icons/icons8-nodejs-144.png"><br>node.js</span>
+            <span><img src="images/icons/icons8-mysql-144.png"><br>MySQL</span>
+            <span><img src="images/icons/icons8-mongodb-144.png"><br>MongoDB</span>
+            <span><img src="images/icons/icons8-java-script-188.png"><br>java script</span>
+        </div>
+        <div class="tools">
+            <h1 id="sub">Tools</h1>
+            <div class="stack-icons">
+            <span><img src="images/icons/icons8-vs-code-144.png"><br>VS Code</span>
+            <span><img src="images/icons/icons8-git-144.png"><br>Git</span>
+            <span><img src="images/icons/icons8-replit-144.png"><br>Replit</span>
+            <span><img src="images/icons/icons8-bootstrap-144.png"><br>Bootstrap</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container"></div>
+    <div id="github-readme-stats">
+        <h1 id="sub">Github Stats</h1>
+        <div class="stats">
+            <p>&nbsp;<img text-align="center" src="https://github-readme-stats.vercel.app/api?username=bhumit-303&show_icons=true&locale=en" alt="bhumit-303" /></p>
+            <br>
+            <p><img  src="https://github-readme-streak-stats.herokuapp.com/?user=bhumit-303&" alt="bhumit-303" /></p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
