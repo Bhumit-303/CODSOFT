@@ -18,13 +18,32 @@ body {
     background-position: center;
 }
 
+#btn {
+    padding: 10px;
+    width: 15%;
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+}
+
+#btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .container {
     padding: 10px 10%;
 }
 
 #logo {
-    height: 110px;
-    width: 140px;
+    height: 100px;
+    width: 190px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -32,6 +51,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #080808;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding: 10px 10%;
 }
 
 nav ul li {
@@ -43,7 +67,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -95,7 +119,7 @@ nav ul li a:hover::after{
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
-    margin-top: 40%;
+    margin-top: 50%;
 }
 
 .about-col-2 {
@@ -110,7 +134,7 @@ nav ul li a:hover::after{
     text-decoration: underline;
     color: grey;
     text-decoration-color: red;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .tab-titles {
