@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <!---------- navigation bar ---------->
     <nav>
         <img id="logo" src="images/logo.jpg" alt="logo">
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="https://drive.google.com/file/d/1GRDgQECeRUiHUFnHBU1qk_v0LTkuOgBv/view?usp=sharing">Resume</a></li>
+            <img onclick="closemenu()" class="ham-icon" src="images/icons/icons8-cross-30.png" alt="">
         </ul>
+        <img onclick="openmenu()" class="ham-icon"  src="images/icons/icons8-menu-64.png" alt="hamburger">
     </nav>
     <!---------- header section --------->
     <div id="header">
@@ -25,7 +28,7 @@
             <div class="header-text">
                 
                 <h1>Hi 👋, I'm <br><span>Bhumit Jain</span><br> From Udaipur, Rajasthan</h1>
-                <p id="p1">And I am Frontend Devloper!</p>
+                <p >And I am a <span id="p1" class="typing-animation"></span></p>
             </div>
         </div>
     </div>
@@ -79,20 +82,20 @@
     <div class="container">
         <h1 id="sub">Tech Stack</h1>
         <div class="stack-icons">
-            <span><img src="images/icons/icons8-html5-144.png"><br>html</span>
-            <span><img src="images/icons/icons8-css3-144.png"><br>CSS</span>
-            <span><img src="images/icons/icons8-nodejs-144.png"><br>node.js</span>
-            <span><img src="images/icons/icons8-mysql-144.png"><br>MySQL</span>
-            <span><img src="images/icons/icons8-mongodb-144.png"><br>MongoDB</span>
-            <span><img src="images/icons/icons8-java-script-188.png"><br>java script</span>
+            <span><img class="stack-icons" src="images/icons/icons8-html5-144.png"><br>html</span>
+            <span><img class="stack-icons" src="images/icons/icons8-css3-144.png"><br>CSS</span>
+            <span><img class="stack-icons" src="images/icons/icons8-nodejs-144.png"><br>node.js</span>
+            <span><img class="stack-icons" src="images/icons/icons8-mysql-144.png"><br>MySQL</span>
+            <span><img class="stack-icons" src="images/icons/icons8-mongodb-144.png"><br>MongoDB</span>
+            <span><img class="stack-icons" src="images/icons/icons8-java-script-188.png"><br>java script</span>
         </div>
         <div class="tools">
             <h1 id="sub">Tools</h1>
             <div class="stack-icons">
-            <span><img src="images/icons/icons8-vs-code-144.png"><br>VS Code</span>
-            <span><img src="images/icons/icons8-git-144.png"><br>Git</span>
-            <span><img src="images/icons/icons8-replit-144.png"><br>Replit</span>
-            <span><img src="images/icons/icons8-bootstrap-144.png"><br>Bootstrap</span>
+            <span><img class="stack-icons" src="images/icons/icons8-vs-code-144.png"><br>VS Code</span>
+            <span><img class="stack-icons" src="images/icons/icons8-git-144.png"><br>Git</span>
+            <span><img class="stack-icons" src="images/icons/icons8-replit-144.png"><br>Replit</span>
+            <span><img class="stack-icons" src="images/icons/icons8-bootstrap-144.png"><br>Bootstrap</span>
             </div>
         </div>
     </div>
@@ -113,23 +116,28 @@
         <div class="row">
             <div class="contact-left">
                 <h1 id="sub">Contact Me</h1>
+                <p><span><a href="https://github.com/Bhumit-303"><img class="cont" src="images/icons/icons8-github-48.png">Bhumit-303</a></span></p>
+                <p><span><a href="www.linkedin.com/in/bhumit-j007"><img class="cont" src="images/icons/icons8-linkedin-48.png">bhumit-j007</a></span></p>
                 <p><span><img class="cont" src="images/icons/icons8-gmail-48.png"></span> bhumitjain942@gmail.com</p>
                 <p><span><img class="cont" src="images/icons/icons8-phone-48.png"></span>7976835303</p>
-                <p><span><a href="www.linkedin.com/in/bhumit-j007"><img class="cont" src="images/icons/icons8-linkedin-48.png">bhumit-j007</a></span></p>
-                <p><span><a href="https://github.com/Bhumit-303"><img class="cont" src="images/icons/icons8-github-48.png">Bhumit-303</a></span></p>
                 <p><span><a href="https://twitter.com/Bhumit0908"><img class="cont" id="x" src="images/icons/icons8-twitterx-50.png">Twitter</a></span></p>
             </div>
             <div class="contact-right">
-                <h1 id="sub">Drop a text here</h1>
-                <form>
+                <h2 >Reach out to me by dropping a message here</h2>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Enter Your Name" required>
                     <input type="email" name="Email" placeholder="Enter Your Email" required>
-                    <textarea name="Message" rows="10" placeholder="Enter your message"></textarea>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
                     <button class="btn" type="submit">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
+</div>
+
+<div class="copyright">
+    <p id="footer">Designed & built by <span>Bhumit Jain </span>© 2024</p>
 </div>
 
 
