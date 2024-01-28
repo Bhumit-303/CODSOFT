@@ -198,6 +198,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* -----------------tech stack-------------- */
 .stack-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -218,8 +219,12 @@ nav ul li a:hover::after{
     margin-top: 2%;
 }
 
+/* git stats */
+
 #github-readme-stats {
     margin: auto;
+    background-color: #1e293b;
+    padding-bottom: 30px;
 }
 
 .stats {
@@ -233,6 +238,8 @@ nav ul li a:hover::after{
     background-color: white;
 }
 
+
+/*  -----------contact section--------- */
 .contact-left span {
     margin-right: 10px;
 }
