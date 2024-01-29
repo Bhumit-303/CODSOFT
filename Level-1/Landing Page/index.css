@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: gray;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+    background-image: url(https://wallpaperaccess.com/full/4297087.jpg);
+    background-repeat: no-repeat;
+    height: fit-content;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid lightblue;
+}
+
+nav {
+    padding: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 35px;
+    font-size: 24px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.car-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.car-images img {    
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-images img:hover {
+    transform: scale(1.1);
+}
+
+.car-features,
+.car-description {
+    flex: 1;
+    margin: 20px;
+}
+
+.car-features h2,
+.car-description h2 {
+    color: blue;
+}
+
+.car-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.car-features li {
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#submit {
+    width: 10%;
+    text-align: center;
+}
+
+.para {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#about {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+}
